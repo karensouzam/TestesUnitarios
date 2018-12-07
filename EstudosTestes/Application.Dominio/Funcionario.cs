@@ -32,11 +32,11 @@ namespace Dominio
 
         private double CalcularImpostoRenda(double salario)
         {
-            if (salario >= 2500)
+            if (salario >= 2500 && salario < 3500)
             {
                 return salario -= salario * 0.10;
             }
-            else if (salario >= 3500)
+            else if (salario >= 3500 && salario < 5000)
             {
                 return salario -= salario * 0.20;
             }
